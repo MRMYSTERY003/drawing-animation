@@ -1,11 +1,11 @@
 from pywhatkit import image_to_ascii_art as a 
-img_path = 'F:\\yt\\v1\\explain\\ironman.jpg'
-text = 'ironman.txt'
+img_path = 'ironman.jpg'
+text = 'ironman.txt'        #creating a text file 
 a(img_path, text)
-print('done..')
+
 
 import turtle as t 
-s_x = -320
+s_x = -320                  #setting the x and y coordinates
 s_y = 250
 
 p = t.Pen()
@@ -15,7 +15,7 @@ p.width(2)
 f_m = 0
 d_m = 4
 
-
+# function to select the color
 def set_col(c):
     chars = {"*": 'white', "S" : 'green', "#" : 'green', "&" : 'white', "@":'black', "$" : 'white', "%" : 'white', "!":'blue', ":" :'darkgreen', ".":'grey'}
     col = chars[c]
